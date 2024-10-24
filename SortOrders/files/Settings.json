@@ -1,0 +1,7 @@
+{
+    "PathOrders": "%ASSEMBLYDIRECTORY%\\files\\Orders10000.json",
+    "PathLog": "%ASSEMBLYDIRECTORY%\\result\\Log.txt",
+    "PathResultOrders": "%ASSEMBLYDIRECTORY%\\result\\ResultOrders.json",
+    "FirstDeliveryTime": "2024-09-01 06:25:30",
+    "DistrictId": null
+}

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SortOrders": {
+      "commandName": "Project",
+      "commandLineArgs": "\"_firstDeliveryDateTime=2024-08-08 13:01:01\" \"_settings=C:\\Code\\SortOrders\\SortOrders\\files\\Settings.json\""
+    }
+  }
+}
