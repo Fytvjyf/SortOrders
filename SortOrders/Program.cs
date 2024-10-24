@@ -3,32 +3,21 @@
     class Program
     {
         static string assemblyDyrectory = "";
-        //static string directoryResult = "";
 
         static List<Order> orders = [];
         static List<Order> FilteredOrders = [];
         static DateTime MinimumPlus30min;
         static string Log = "";
-        //static DateTime FilterMaximum = DateTime.MaxValue;
 
         // Может быть получена из командной строки.
         static string PathSettings = "";
 
         // Могут быть заданы в командной строке или в настроечном файле.
         static string? PathInputOrders = null;
-        //static bool cmdRecieved_PathInputOrders = false;
-
         static string? PathResultOrders = null;
-        //static bool cmdRecieved_PathResultOrders = false;
-
         static string? PathLog = null;
-        //static bool cmdRecieved_PathLog = false;
-
-        static DateTime? FilterMinimum = null;// DateTime.MinValue;
-        //static bool cmdRecieved_FilterMinimum = false;
-
+        static DateTime? FilterMinimum = null;
         static string? FilterDistrict = null;
-        //static bool cmdRecieved_FilterDistrict = false;
 
         /// <summary>
         /// На вход должен поступить фильтр по времени "с" и "по".
@@ -83,24 +72,19 @@
                 if (arg.StartsWith("_cityDistrict="))
                 {
                     FilterDistrict = arg.Split('=')[1];
-                    //cmdRecieved_FilterDistrict = true;
                 }
                 if (arg.StartsWith("_firstDeliveryDateTime="))
                 {
                     if (DateTime.TryParse(arg.Split('=')[1], out DateTime min))
                         FilterMinimum = min;
-
-                    //cmdRecieved_FilterMinimum = true;
                 }
                 if (arg.StartsWith("_deliveryLog="))
                 {
                     PathLog = arg.Split('=')[1];
-                    //cmdRecieved_PathLog = true;
                 }
                 if (arg.StartsWith("_deliveryOrder="))
                 {
                     PathResultOrders = arg.Split('=')[1];
-                    //cmdRecieved_PathResultOrders = true;
                 }
                 if (arg.StartsWith("_settings="))
                 {
@@ -109,7 +93,6 @@
                 if (arg.StartsWith("_inputOrders="))
                 {
                     PathInputOrders = arg.Split("=")[1];
-                    //cmdRecieved_PathInputOrders = true;
                 }
             }
 

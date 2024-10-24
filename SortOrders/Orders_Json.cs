@@ -110,7 +110,6 @@ namespace DelApp
                 }
                 catch { }
             }
-            //string time = string.Format("yyyy.MM.dd-HH.mm.ss", DateTime.Now);
             return directoryOutput + $"\\FilteredOrders({DateTime.Now:yyyy.MM.dd-HH.mm.ss}).json";
         }
     }
