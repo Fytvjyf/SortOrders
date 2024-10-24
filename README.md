@@ -11,7 +11,7 @@
 Если какие-то данных не будет указано в файле настроек, то будут использованы данные по умолчанию.
 
 Значения по умолчанию:
-- _cityDistrict = null (Сортировка по раёону не будет осуществлена)
+- _cityDistrict = null (Сортировка по району не будет осуществлена)
 - _firstDeliveryDateTime = DateTime.MinValue
 - _deliveryLog = %ДиректорияИсполняемогоФайла%\result\Log.txt
 - _deliveryOrder = %ДиректорияИсполняемогоФайла%\result\ResultOrders.json
